@@ -1,0 +1,39 @@
+[user]
+	name = Albin Gilles
+	email = gilles.albin@gmail.com
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 986x797+39+38
+	history-view-vpane-position = 221
+	main-window-view = HistoryView
+	file-view-vpane-position = 693
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[core]
+  editor = vim
+[alias]
+  ci = commit
+  st = status
+  co = checkout
+  cob = checkout -b
+  d = diff
+  pl = pull
+  poule = pull
+  m = merge
+  ms = merge --squash
+  b = branch
+  rb = rebase
+  l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  rs = reset
+  rsh = reset --hard
+  ps = push
+  f = fetch
+[help]
+  autocorrect = 1
+[push]
+	default = current
