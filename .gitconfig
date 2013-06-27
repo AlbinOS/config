@@ -1,12 +1,12 @@
 [user]
-	name = Albin Gilles
-	email = gilles.albin@gmail.com
+  name = Albin Gilles
+  email = gilles.albin@gmail.com
 [giggle]
-	main-window-maximized = false
-	main-window-geometry = 986x797+39+38
-	history-view-vpane-position = 221
-	main-window-view = HistoryView
-	file-view-vpane-position = 693
+  main-window-maximized = false
+  main-window-geometry = 986x797+39+38
+  history-view-vpane-position = 221
+  main-window-view = HistoryView
+  file-view-vpane-position = 693
 [color]
   diff = auto
   status = auto
@@ -36,4 +36,4 @@
 [help]
   autocorrect = 1
 [push]
-	default = current
+  default = current
