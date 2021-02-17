@@ -1,7 +1,6 @@
 local user='%{$fg[red]%}%n%{$reset_color%}'
 local pwd='%{$fg[cyan]%}%~%{$reset_color%}'
-local rvm='%{$fg[yellow]%}$(if [[ `rvm-prompt 2>/dev/null` != "" ]]; then echo -n " "; rvm-prompt i v g; fi)%{$reset_color%}'
-local rbenv='%{$fg[yellow]%}$(if [[ `rbenv local 2>/dev/null` != "" ]]; then echo -n " "; rbenv local; fi)%{$reset_color%}'
+local virtual_env='%{$fg[yellow]%}$(if [[ `virtualenv_prompt_info 2>/dev/null` != "" ]]; then echo -n " "; virtualenv_prompt_info | tr -d [ | tr -d ]; fi)%{$reset_color%}'
 local return_code='%(?..%{$fg[red]%}%? ↵%{$reset_color%})'
 local git_branch=' $(git_prompt_info)'
 
@@ -11,5 +10,4 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}✚"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 PROMPT="${pwd} » "
-RPROMPT="${return_code}${git_branch}${rvm}${rbenv}"
-
+RPROMPT="${return_code}${git_branch}${virtual_env}"
